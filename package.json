@@ -1,0 +1,39 @@
+{
+  "name": "itworx-task-frontend",
+  "version": "1.0.0",
+  "description": "itworx frontend task",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammedelzanaty/itworx-task-frontend.git"
+  },
+  "keywords": [
+    "itworx"
+  ],
+  "author": "mohammedelzanaty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohammedelzanaty/itworx-task-frontend/issues"
+  },
+  "homepage": "https://github.com/mohammedelzanaty/itworx-task-frontend#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "husky": "^1.0.0-rc.13",
+    "prettier": "^1.14.3"
+  }
+}
