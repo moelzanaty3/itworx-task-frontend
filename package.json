@@ -21,11 +21,6 @@
     "url": "https://github.com/mohammedelzanaty/itworx-task-frontend/issues"
   },
   "homepage": "https://github.com/mohammedelzanaty/itworx-task-frontend#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint:fix"
-    }
-  },
   "devDependencies": {
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.0.0",
@@ -35,5 +30,8 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "husky": "^1.0.0-rc.13",
     "prettier": "^1.14.3"
+  },
+  "dependencies": {
+    "pug": "^2.0.3"
   }
 }
