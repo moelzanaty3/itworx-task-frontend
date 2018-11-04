@@ -3,17 +3,17 @@
 \*------------------------------------*/
 
 $btn-primary-bg: $color-brand;
-$btn-primary-bg-hover: #c23f46;
+$btn-primary-bg-hover: #de2b47;
 
 $btn-secondary-bg: $color-white;
 $btn-secondary-bg-hover: $bg-color-gray;
 
-button {
+.button {
   display: inline-block;
 
   padding: half($base-spacing-unit) double($base-spacing-unit);
 
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
@@ -44,11 +44,16 @@ button {
   @include attention() {
     text-decoration: none;
   }
-
+  &-stroked {
+    padding: 0.4rem 2.5rem;
+    color: $color-white;
+    border: 1px solid $color-text-light-grey;
+    transition: all 200ms ease-in;
+  }
   &--primary {
     color: $color-white;
     background-color: $btn-primary-bg;
-    background-image: linear-gradient(76deg, #e72d70, #ee8e15);
+    background-image: linear-gradient(76deg, $color-brand, #ee8e15);
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),
       0 10px 50px 0 rgba(238, 142, 21, 0.4);
 
@@ -72,4 +77,49 @@ button {
   &--full {
     width: 100%;
   }
+}
+
+/* Radial Out */
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-brand;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover,
+.hvr-radial-out:focus,
+.hvr-radial-out:active {
+  color: $color-white;
+}
+.hvr-radial-out:hover:before,
+.hvr-radial-out:focus:before,
+.hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
 }

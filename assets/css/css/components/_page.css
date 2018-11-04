@@ -1,0 +1,42 @@
+.grid {
+  max-width: 69em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0; }
+  .grid li {
+    display: block;
+    float: left;
+    padding: 7px;
+    width: 33%;
+    opacity: 0; }
+    .grid li.shown {
+      opacity: 1; }
+
+.no-js .grid li, .no-cssanimations .grid li {
+  opacity: 1; }
+
+.grid li a, .grid li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%; }
+
+.grid.animated-cards li.animate {
+  -webkit-transform: translateY(200px);
+  -ms-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards; }
+
+@-webkit-keyframes moveUp {
+  0% { }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes moveUp {
+  0% { }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
