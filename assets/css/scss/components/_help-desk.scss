@@ -1,0 +1,34 @@
+.item.item__help-desk {
+  position: relative;
+  background: $color-brand;
+  overflow: hidden;
+  .smile {
+    position: absolute;
+    top: -34px;
+    left: -42px;
+    opacity: 0.2;
+    i.far.fa-smile {
+      font-size: 160px;
+    }
+  }
+  .content {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    strong {
+      color: $color-white;
+      font-weight: bolder;
+      &:nth-child(1) {
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+      }
+      &:nth-child(2) {
+        font-size: 3.4rem;
+      }
+    }
+  }
+}
