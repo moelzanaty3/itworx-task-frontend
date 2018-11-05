@@ -1,4 +1,4 @@
-.item.item__events {
+.widget-container {
   background: $color-white;
   margin: 10px 0px;
   padding: 20px;
@@ -18,7 +18,7 @@
       color: darken($color: $color-grey, $amount: 40%);
     }
   }
-  .item__events-widget {
+  .item__widget {
     background-image: linear-gradient(
       to right,
       $color-grey 10%,
@@ -34,19 +34,23 @@
     justify-content: center;
     .widget__icon {
       i {
-        font-size: 75px;
-        color: darken($color: $color-grey, $amount: 30%);
-      }
-      span {
-        display: inline-block;
-        background: darken($color: $color-grey, $amount: 30%);
-        color: $color-white;
         position: relative;
-        bottom: 45px;
-        height: 40px;
-        width: 65px;
-        font-size: 20px;
-        text-align: center;
+        font-size: 50px;
+        color: darken($color: $color-grey, $amount: 30%);
+        margin-right: 10px;
+        &::after {
+          content: "12";
+          font-size: 22px;
+          font-weight: bold;
+          text-align: center;
+          color: $color-white;
+          position: absolute;
+          top: 20px;
+          left: 4px;
+          right: 4px;
+          bottom: 4px;
+          background: darken($color: $color-grey, $amount: 30%);
+        }
       }
     }
     .widget__content {
@@ -54,10 +58,16 @@
         font-size: 20px;
         color: $color-concrte;
         font-weight: 400;
+        line-height: 1.2;
         margin: 0px;
+        letter-spacing: 0.5px;
+        @media screen and (min-width: 678px) {
+          font-size: 14px;
+        }
       }
       strong {
         color: darken($color: $color-grey-light, $amount: 10%);
+        font-size: 12px;
       }
     }
   }

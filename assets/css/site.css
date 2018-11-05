@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ::-webkit-scrollbar {
   width: 5px;
   border-radius: 5px; }
@@ -1654,28 +1655,28 @@ input::input-placeholder {
       font-size: 0.6rem;
       width: 100px; }
 
-.item.item__events {
+.widget-container {
   background: #ffffff;
   margin: 10px 0px;
   padding: 20px; }
-  .item.item__events header {
+  .widget-container header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .item.item__events header i {
+    .widget-container header i {
       position: relative;
       top: -15px;
       font-size: 24px;
       color: #de2b47; }
-    .item.item__events header h4 {
+    .widget-container header h4 {
       text-transform: uppercase;
       letter-spacing: 1.4;
       margin: 0 0 30px 10px;
       color: #3c3d3d; }
-  .item.item__events .item__events-widget {
+  .widget-container .item__widget {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #a2a3a3), color-stop(0%, rgba(255, 255, 255, 0)));
     background-image: -webkit-linear-gradient(left, #a2a3a3 10%, rgba(255, 255, 255, 0) 0%);
     background-image: -o-linear-gradient(left, #a2a3a3 10%, rgba(255, 255, 255, 0) 0%);
@@ -1691,26 +1692,36 @@ input::input-placeholder {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .item.item__events .item__events-widget .widget__icon i {
-      font-size: 75px;
-      color: #565656; }
-    .item.item__events .item__events-widget .widget__icon span {
-      display: inline-block;
-      background: #565656;
-      color: #ffffff;
+    .widget-container .item__widget .widget__icon i {
       position: relative;
-      bottom: 45px;
-      height: 40px;
-      width: 65px;
-      font-size: 20px;
-      text-align: center; }
-    .item.item__events .item__events-widget .widget__content p {
+      font-size: 50px;
+      color: #565656;
+      margin-right: 10px; }
+      .widget-container .item__widget .widget__icon i::after {
+        content: "12";
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        position: absolute;
+        top: 20px;
+        left: 4px;
+        right: 4px;
+        bottom: 4px;
+        background: #565656; }
+    .widget-container .item__widget .widget__content p {
       font-size: 20px;
       color: #2c3e50;
       font-weight: 400;
-      margin: 0px; }
-    .item.item__events .item__events-widget .widget__content strong {
-      color: #cfd9db; }
+      line-height: 1.2;
+      margin: 0px;
+      letter-spacing: 0.5px; }
+      @media screen and (min-width: 678px) {
+        .widget-container .item__widget .widget__content p {
+          font-size: 14px; } }
+    .widget-container .item__widget .widget__content strong {
+      color: #cfd9db;
+      font-size: 12px; }
 
 .item.item__help-desk {
   position: relative;
@@ -1748,6 +1759,35 @@ input::input-placeholder {
         margin-bottom: 5px; }
       .item.item__help-desk .content strong:nth-child(2) {
         font-size: 3.4rem; }
+
+.item.item__announcement.widget-container {
+  margin-top: 0px; }
+  .item.item__announcement.widget-container header::after {
+    content: "▴";
+    font-size: 14px;
+    right: 30px;
+    top: 18px;
+    position: absolute;
+    color: #8aa4be; }
+  .item.item__announcement.widget-container .widget__content {
+    position: relative;
+    cursor: pointer; }
+    .item.item__announcement.widget-container .widget__content::after {
+      content: "▸";
+      font-size: 10px;
+      top: 15px;
+      right: 0;
+      position: absolute;
+      color: #8aa4be;
+      opacity: 0;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out; }
+    .item.item__announcement.widget-container .widget__content:hover::after {
+      opacity: 1; }
+    @media screen and (min-width: 678px) {
+      .item.item__announcement.widget-container .widget__content p {
+        font-size: 15px; } }
 
 /*------------------------------------*\
   Trmzmbs > Hide
