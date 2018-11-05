@@ -1654,6 +1654,64 @@ input::input-placeholder {
       font-size: 0.6rem;
       width: 100px; }
 
+.item.item__events {
+  background: #ffffff;
+  margin: 10px 0px;
+  padding: 20px; }
+  .item.item__events header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .item.item__events header i {
+      position: relative;
+      top: -15px;
+      font-size: 24px;
+      color: #de2b47; }
+    .item.item__events header h4 {
+      text-transform: uppercase;
+      letter-spacing: 1.4;
+      margin: 0 0 30px 10px;
+      color: #3c3d3d; }
+  .item.item__events .item__events-widget {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #a2a3a3), color-stop(0%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(left, #a2a3a3 10%, rgba(255, 255, 255, 0) 0%);
+    background-image: -o-linear-gradient(left, #a2a3a3 10%, rgba(255, 255, 255, 0) 0%);
+    background-image: linear-gradient(to right, #a2a3a3 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .item.item__events .item__events-widget .widget__icon i {
+      font-size: 75px;
+      color: #565656; }
+    .item.item__events .item__events-widget .widget__icon span {
+      display: inline-block;
+      background: #565656;
+      color: #ffffff;
+      position: relative;
+      bottom: 45px;
+      height: 40px;
+      width: 65px;
+      font-size: 20px;
+      text-align: center; }
+    .item.item__events .item__events-widget .widget__content p {
+      font-size: 20px;
+      color: #2c3e50;
+      font-weight: 400;
+      margin: 0px; }
+    .item.item__events .item__events-widget .widget__content strong {
+      color: #cfd9db; }
+
 /*------------------------------------*\
   Trmzmbs > Hide
 \*------------------------------------*/
