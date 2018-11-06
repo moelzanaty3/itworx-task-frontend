@@ -1789,6 +1789,73 @@ input::input-placeholder {
       .item.item__announcement.widget-container .widget__content p {
         font-size: 15px; } }
 
+.item.item__find-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 70px;
+  margin-bottom: 15px; }
+  .item.item__find-profile span {
+    text-transform: uppercase;
+    background: #de2b47;
+    color: #ffffff;
+    font-size: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5rem 0.2rem;
+    width: 30%;
+    font-weight: bold; }
+  .item.item__find-profile .search__box {
+    height: 70px;
+    padding: 0.5rem 4.6rem 0.5rem 1rem; }
+    .item.item__find-profile .search__box:focus, .item.item__find-profile .search__box:active {
+      border: none; }
+  .item.item__find-profile .search__submit {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #de2b47; }
+  .item.item__find-profile ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #a2a3a3;
+    font-weight: 400;
+    font-style: initial;
+    font-size: 0.8rem; }
+  .item.item__find-profile ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #a2a3a3;
+    font-weight: 400;
+    font-style: initial;
+    font-size: 0.8rem; }
+  .item.item__find-profile :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #a2a3a3;
+    font-weight: 400;
+    font-style: initial;
+    font-size: 0.8rem; }
+  .item.item__find-profile :-moz-placeholder {
+    /* Firefox 18- */
+    color: #a2a3a3;
+    font-weight: 400;
+    font-style: initial;
+    font-size: 0.8rem; }
+
+.item.item__self-service {
+  background: #ffffff;
+  margin: 10px 0px;
+  padding: 20px; }
+
 /*------------------------------------*\
   Trmzmbs > Hide
 \*------------------------------------*/
