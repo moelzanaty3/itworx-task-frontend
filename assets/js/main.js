@@ -416,3 +416,46 @@ var args = {
 };
 
 $(".carousel").MZNZN(args);
+
+$(document).ready(function() {
+  var getcarHeight = $(".car.active").height();
+
+  $(".cars").css({
+    height: getcarHeight,
+  });
+
+  var carItem = $(".car"),
+    carCurrentItem = carItem.filter(".active");
+
+  $("#next").on("click", function(e) {
+    e.preventDefault();
+
+    var nextItem = carCurrentItem.next();
+
+    carCurrentItem.removeClass("active");
+
+    if (nextItem.length) {
+      carCurrentItem = nextItem.addClass("active");
+    } else {
+      carCurrentItem = carItem.first().addClass("active");
+    }
+  });
+
+  $("#prev").on("click", function(e) {
+    e.preventDefault();
+
+    var prevItem = carCurrentItem.prev();
+
+    carCurrentItem.removeClass("active");
+
+    if (prevItem.length) {
+      carCurrentItem = prevItem.addClass("active");
+    } else {
+      carCurrentItem = carItem.last().addClass("active");
+    }
+  });
+
+  setInterval(() => {
+    $("#next").click();
+  }, 5000);
+});

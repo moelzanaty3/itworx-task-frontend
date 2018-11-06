@@ -1,0 +1,124 @@
+// Duration
+$duration: 0.5s;
+// Font Weights
+$thin: 100;
+$light: 300;
+$regular: 400;
+$semibold: 500;
+$bold: 700;
+$ultra: 800;
+// Base Font
+/* $base-background: #00CC99; */
+
+$base-background: $color-brand;
+$base-font-size: 14px;
+$base-font-weight: $regular;
+$base-line-height: 1.6em;
+// Colors
+$black: #000000;
+$dark-gray: rgba($black, 0.8);
+$gray: rgba($black, 0.6);
+$light-gray: rgba($black, 0.4);
+$lighter-gray: rgba($black, 0.2);
+$accent: $color-brand;
+
+// Card Settings
+$gutters: 24px;
+// Card
+.card {
+  background: $color-white;
+  box-sizing: border-box;
+  text-align: center;
+  .cars {
+    position: relative;
+    overflow: hidden;
+    transition: $duration ease; // car
+    // padding: 2rem 0;
+    .car {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: $duration ease;
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      } // Thumbnail
+      .tag {
+        background: $color-brand;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: $color-white;
+        font-weight: bold;
+        padding: 0.1rem 0.5rem;
+        z-index: 1;
+      }
+      .thumbnail {
+        position: relative;
+        .car-img {
+          width: 100%;
+          min-height: 250px;
+          max-height: 250px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            transform: scale(2);
+          }
+        }
+        .circle {
+          background: $color-brand;
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          padding: 1rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 50%;
+          transform: translateX(-50%) translateY(-40%);
+          img {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+          }
+        }
+      } // Title
+      .content {
+        margin-top: 75px;
+        .title {
+          margin: 0 0 ($gutters / 2);
+          color: $color-brand;
+          font-size: 24px;
+          transition: $duration ease;
+        } // Description
+        p.description {
+          // display: none;
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  } // Footer
+  .footer {
+    position: relative;
+    top: -80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    #prev {
+      margin-left: 10px;
+    }
+    #next {
+      margin-right: 10px;
+    }
+  }
+  a.button {
+    margin: 0 10px 10px 0;
+    font-size: 0.6rem;
+    width: 100px;
+    float: right;
+  }
+}
