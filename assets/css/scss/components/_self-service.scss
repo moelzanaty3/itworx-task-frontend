@@ -1,10 +1,11 @@
 .item.item__self-service {
   background: $color-white;
   margin: 10px 0px;
-  padding: 20px;
+  padding: 30px 20px 40px 20px;
   background: #dedede;
   header {
     display: flex;
+    margin-bottom: 15px;
     span.icon {
       margin-right: 10px;
       position: relative;
@@ -20,8 +21,8 @@
   }
   .services.grid-container {
     display: grid;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
     grid-template-columns: auto auto auto;
     .grid-item {
       position: relative;
