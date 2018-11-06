@@ -1,0 +1,106 @@
+.item.item__self-service {
+  background: $color-white;
+  margin: 10px 0px;
+  padding: 20px;
+  background: #dedede;
+  header {
+    display: flex;
+    span.icon {
+      margin-right: 10px;
+      position: relative;
+      top: 2px;
+      background: {
+        image: url("../images/icons/settings.png");
+      }
+    }
+  }
+  .services {
+    padding: 20px;
+    background: #ebebeb;
+  }
+  .services.grid-container {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    .grid-item {
+      position: relative;
+      font-size: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span.border {
+        position: absolute;
+        background: #dedede;
+        &.border-right {
+          width: 2px;
+          height: 60px;
+          right: -5px;
+        }
+        &.border-bottom {
+          width: 60px;
+          height: 2px;
+          bottom: -5px;
+        }
+      }
+      .shape {
+        width: 50px;
+        height: 50px;
+        background: {
+          image: url("../images/service_icons.jpg");
+        }
+      }
+      span {
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+      }
+    }
+    .grid-item:nth-child(1) .shape {
+      background-position: 11% 5%;
+    }
+    .grid-item:nth-child(2) .shape {
+      background-position: 51% 5%;
+    }
+    .grid-item:nth-child(3) {
+      .shape {
+        background-position: 92% 9%;
+      }
+      span.border.border-right {
+        display: none;
+      }
+    }
+    .grid-item:nth-child(4) {
+      .shape {
+        background-position: 11% 74%;
+      }
+      span.border-bottom {
+        display: none;
+      }
+    }
+    .grid-item:nth-child(5) {
+      .shape {
+        background-position: 51% 74%;
+      }
+      span.border-bottom {
+        display: none;
+      }
+    }
+    .grid-item:nth-child(6) {
+      .shape {
+        background-position: 92% 75%;
+      }
+      span.border {
+        display: none;
+      }
+    }
+  }
+  a {
+    margin: 10px 0 0 0;
+    font-size: 0.5rem;
+    width: 100px;
+    float: right;
+  }
+}
