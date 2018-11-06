@@ -1,0 +1,156 @@
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+  .item.item__news {
+    .carousel {
+      padding-top: 50%;
+    }
+    .indicators {
+      right: 4px;
+      li {
+        width: 8px;
+        height: 8px;
+      }
+    }
+    .slide__wrapper {
+      padding: 1rem;
+      margin-top: 0px;
+      .slider__wrapper___img {
+        font-size: 1rem;
+      }
+      .slider__wrapper___content {
+        margin-top: 0px;
+        h5 {
+          font-size: 1rem;
+        }
+        h3 {
+          font-size: 0.8rem;
+        }
+        p {
+          margin-top: 10px;
+          margin-bottom: 0px;
+          font-size: 0.8rem;
+        }
+        a.button.button-stroked {
+          margin-top: 10px;
+          font-size: 0.5rem;
+          padding: 0.3rem 1.8rem;
+        }
+      }
+    }
+  }
+  .item.item__find-profile {
+    height: 50px;
+    span {
+      padding: 0.5rem 0.2rem;
+      font-size: 0.5rem;
+    }
+    .search__box {
+      height: 50px;
+    }
+  }
+  .widget-container {
+    margin: 10px 0px;
+    padding: 20px 0px;
+    .item__widget {
+      justify-content: flex-start;
+      .widget__icon {
+        img {
+          position: relative;
+          top: -6px;
+        }
+      }
+      .widget__content {
+        padding: 0px 20px;
+        p {
+          font-size: 18px;
+        }
+        strong {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .card .cars .car .tag {
+    font-size: 90%;
+  }
+  .card .cars .car .content .title {
+    font-size: 22px;
+  }
+  .item.item__help-desk,
+  .item.item__find-profile {
+    margin: 10px 0;
+  }
+}
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+  .item.item__news {
+    .carousel {
+      padding-top: 80%;
+    }
+    .slide__wrapper {
+      padding: 1rem;
+      margin-top: 0px;
+      .slider__wrapper___img {
+        margin: 1.8rem 0 0 0;
+        padding: 1.5rem 0;
+        font-size: 0.5rem;
+      }
+      .slider__wrapper___content {
+        margin-top: 0px;
+        h5 {
+          margin: 0;
+          margin-left: 5px;
+          font-size: 0.5rem;
+        }
+        h3 {
+          font-size: 0.8rem;
+          line-height: 1.2;
+        }
+        p {
+          margin-top: 10px;
+          margin-bottom: 0px;
+          font-size: 0.5rem;
+        }
+        a.button.button-stroked {
+          margin-top: 10px;
+          font-size: 0.5rem;
+          padding: 0.3rem 1.8rem;
+        }
+      }
+    }
+  }
+  .item.item__find-profile {
+    height: 50px;
+    span {
+      padding: 0.5rem 0.2rem;
+      font-size: 0.5rem;
+    }
+    .search__box {
+      height: 50px;
+    }
+  }
+  .widget-container {
+    margin: 10px 0px;
+    padding: 20px 0px;
+    .item__widget {
+      justify-content: space-around;
+      .widget__content {
+        p {
+          font-size: 15px;
+        }
+        strong {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .card .cars .car .tag {
+    font-size: 80%;
+  }
+  .card .cars .car .content .title {
+    font-size: 18px;
+  }
+}

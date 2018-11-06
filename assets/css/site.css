@@ -1762,6 +1762,8 @@ input::input-placeholder {
       width: 50px;
       height: 50px; }
       .widget-container .item__widget .widget__icon img {
+        position: relative;
+        top: -1px;
         margin-left: 10px; }
       .widget-container .item__widget .widget__icon i {
         position: relative;
@@ -2093,7 +2095,7 @@ input::input-placeholder {
           margin: 0 auto; }
   .card .footer {
     position: relative;
-    top: -80px;
+    top: -60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2274,6 +2276,115 @@ ul.tabs {
   .d_active {
     background-color: #db0e38;
     color: #ffffff; } }
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .item.item__news .carousel {
+    padding-top: 50%; }
+  .item.item__news .indicators {
+    right: 4px; }
+    .item.item__news .indicators li {
+      width: 8px;
+      height: 8px; }
+  .item.item__news .slide__wrapper {
+    padding: 1rem;
+    margin-top: 0px; }
+    .item.item__news .slide__wrapper .slider__wrapper___img {
+      font-size: 1rem; }
+    .item.item__news .slide__wrapper .slider__wrapper___content {
+      margin-top: 0px; }
+      .item.item__news .slide__wrapper .slider__wrapper___content h5 {
+        font-size: 1rem; }
+      .item.item__news .slide__wrapper .slider__wrapper___content h3 {
+        font-size: 0.8rem; }
+      .item.item__news .slide__wrapper .slider__wrapper___content p {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 0.8rem; }
+      .item.item__news .slide__wrapper .slider__wrapper___content a.button.button-stroked {
+        margin-top: 10px;
+        font-size: 0.5rem;
+        padding: 0.3rem 1.8rem; }
+  .item.item__find-profile {
+    height: 50px; }
+    .item.item__find-profile span {
+      padding: 0.5rem 0.2rem;
+      font-size: 0.5rem; }
+    .item.item__find-profile .search__box {
+      height: 50px; }
+  .widget-container {
+    margin: 10px 0px;
+    padding: 20px 0px; }
+    .widget-container .item__widget {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      .widget-container .item__widget .widget__icon img {
+        position: relative;
+        top: -6px; }
+      .widget-container .item__widget .widget__content {
+        padding: 0px 20px; }
+        .widget-container .item__widget .widget__content p {
+          font-size: 18px; }
+        .widget-container .item__widget .widget__content strong {
+          font-size: 10px; }
+  .card .cars .car .tag {
+    font-size: 90%; }
+  .card .cars .car .content .title {
+    font-size: 22px; }
+  .item.item__help-desk,
+  .item.item__find-profile {
+    margin: 10px 0; } }
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .item.item__news .carousel {
+    padding-top: 80%; }
+  .item.item__news .slide__wrapper {
+    padding: 1rem;
+    margin-top: 0px; }
+    .item.item__news .slide__wrapper .slider__wrapper___img {
+      margin: 1.8rem 0 0 0;
+      padding: 1.5rem 0;
+      font-size: 0.5rem; }
+    .item.item__news .slide__wrapper .slider__wrapper___content {
+      margin-top: 0px; }
+      .item.item__news .slide__wrapper .slider__wrapper___content h5 {
+        margin: 0;
+        margin-left: 5px;
+        font-size: 0.5rem; }
+      .item.item__news .slide__wrapper .slider__wrapper___content h3 {
+        font-size: 0.8rem;
+        line-height: 1.2; }
+      .item.item__news .slide__wrapper .slider__wrapper___content p {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 0.5rem; }
+      .item.item__news .slide__wrapper .slider__wrapper___content a.button.button-stroked {
+        margin-top: 10px;
+        font-size: 0.5rem;
+        padding: 0.3rem 1.8rem; }
+  .item.item__find-profile {
+    height: 50px; }
+    .item.item__find-profile span {
+      padding: 0.5rem 0.2rem;
+      font-size: 0.5rem; }
+    .item.item__find-profile .search__box {
+      height: 50px; }
+  .widget-container {
+    margin: 10px 0px;
+    padding: 20px 0px; }
+    .widget-container .item__widget {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .widget-container .item__widget .widget__content p {
+        font-size: 15px; }
+      .widget-container .item__widget .widget__content strong {
+        font-size: 10px; }
+  .card .cars .car .tag {
+    font-size: 80%; }
+  .card .cars .car .content .title {
+    font-size: 18px; } }
 
 /*------------------------------------*\
   Trmzmbs > Hide
