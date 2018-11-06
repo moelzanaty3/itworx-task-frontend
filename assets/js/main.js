@@ -420,16 +420,13 @@ $(".carousel").MZNZN(args);
 $(document).ready(function() {
   var getcarHeight = $(".car.active").height();
 
-  $(".cars").css({
-    height: getcarHeight,
-  });
+  $(".cars").css({ height: getcarHeight });
 
   var carItem = $(".car"),
     carCurrentItem = carItem.filter(".active");
 
   $("#next").on("click", function(e) {
     e.preventDefault();
-
     var nextItem = carCurrentItem.next();
 
     carCurrentItem.removeClass("active");

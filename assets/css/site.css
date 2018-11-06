@@ -1963,7 +1963,6 @@ input::input-placeholder {
     width: 100px;
     float: right; }
 
-/* $base-background: #00CC99; */
 .card {
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -2066,6 +2065,40 @@ input::input-placeholder {
     font-size: 0.6rem;
     width: 100px;
     float: right; }
+
+.item.item__gallary {
+  margin-top: 15px;
+  position: relative; }
+  .item.item__gallary .carousel {
+    padding-top: 70%; }
+    .item.item__gallary .carousel img {
+      height: 100%; }
+  .item.item__gallary .indicators {
+    display: none; }
+  .item.item__gallary .content {
+    widht: 100%;
+    height: 100%;
+    background: black;
+    position: relative; }
+    .item.item__gallary .content::after {
+      content: "Placeholder Image";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      font-size: 1.2rem; }
+  .item.item__gallary .tag {
+    background: #e00000;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.1rem 0.5rem;
+    z-index: 1; }
 
 /*------------------------------------*\
   Trmzmbs > Hide

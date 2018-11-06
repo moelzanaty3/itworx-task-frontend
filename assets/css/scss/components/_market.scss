@@ -1,26 +1,5 @@
 // Duration
 $duration: 0.5s;
-// Font Weights
-$thin: 100;
-$light: 300;
-$regular: 400;
-$semibold: 500;
-$bold: 700;
-$ultra: 800;
-// Base Font
-/* $base-background: #00CC99; */
-
-$base-background: $color-brand;
-$base-font-size: 14px;
-$base-font-weight: $regular;
-$base-line-height: 1.6em;
-// Colors
-$black: #000000;
-$dark-gray: rgba($black, 0.8);
-$gray: rgba($black, 0.6);
-$light-gray: rgba($black, 0.4);
-$lighter-gray: rgba($black, 0.2);
-$accent: $color-brand;
 
 // Card Settings
 $gutters: 24px;
