@@ -53,6 +53,9 @@ ul.tabs {
       padding: 1rem;
       border: none;
       .form-group {
+        label {
+          cursor: pointer;
+        }
         input[type="radio"] {
           position: absolute;
           opacity: 0;

@@ -1,5 +1,34 @@
 .page {
   margin: 15px 0px;
+  .side-icons {
+    background: $color-brand;
+    padding: 0.5rem;
+    position: fixed;
+    border-radius: 0 8px 8px 0;
+    @media screen and (max-width: 1321px) {
+      display: none;
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
+      margin: 5px 0;
+      background: {
+        image: url("../images/side-icons.jpg");
+      }
+    }
+    .icon:nth-child(1) {
+      background-position: 50% 8%;
+    }
+    .icon:nth-child(2) {
+      background-position: 50% 35%;
+    }
+    .icon:nth-child(3) {
+      background-position: 50% 64%;
+    }
+    .icon:nth-child(4) {
+      background-position: 50% 93%;
+    }
+  }
   span.icon {
     display: inline-block;
     width: 24px;

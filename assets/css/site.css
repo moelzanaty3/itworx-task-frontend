@@ -7,7 +7,7 @@
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e00000;
+  background-color: #db0e38;
   outline: 1px solid slategrey; }
 
 .container,
@@ -1157,11 +1157,11 @@ body {
 
 *::-moz-selection {
   color: #ffffff;
-  background: #e00000; }
+  background: #db0e38; }
 
 *::selection {
   color: #ffffff;
-  background: #e00000; }
+  background: #db0e38; }
 
 /*------------------------------------*\
   Elements > Fonts
@@ -1363,7 +1363,7 @@ input::input-placeholder {
     transition: all 200ms ease-in; }
   .button--primary {
     color: #ffffff;
-    background-color: #e00000; }
+    background-color: #db0e38; }
   .button--secondary {
     border: 1px solid #ecf0f1;
     background-color: #ffffff; }
@@ -1399,7 +1399,7 @@ input::input-placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #e00000;
+  background: #db0e38;
   border-radius: 100%;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -1431,6 +1431,27 @@ input::input-placeholder {
 
 .page {
   margin: 15px 0px; }
+  .page .side-icons {
+    background: #db0e38;
+    padding: 0.5rem;
+    position: fixed;
+    border-radius: 0 8px 8px 0; }
+    @media screen and (max-width: 1321px) {
+      .page .side-icons {
+        display: none; } }
+    .page .side-icons .icon {
+      width: 40px;
+      height: 40px;
+      margin: 5px 0;
+      background-image: url("../images/side-icons.jpg"); }
+    .page .side-icons .icon:nth-child(1) {
+      background-position: 50% 8%; }
+    .page .side-icons .icon:nth-child(2) {
+      background-position: 50% 35%; }
+    .page .side-icons .icon:nth-child(3) {
+      background-position: 50% 64%; }
+    .page .side-icons .icon:nth-child(4) {
+      background-position: 50% 93%; }
   .page span.icon {
     display: inline-block;
     width: 24px;
@@ -1537,7 +1558,7 @@ input::input-placeholder {
   -o-transition: border-color 0.3s ease-out;
   transition: border-color 0.3s ease-out; }
   .arrow:hover {
-    border-color: #e00000; }
+    border-color: #db0e38; }
 
 .arrow-left {
   left: 20px;
@@ -1646,7 +1667,7 @@ input::input-placeholder {
       margin: 10px 0; }
       .item__circular .item__circular___content h5 span.tag {
         display: inline-block;
-        background: #e00000;
+        background: #db0e38;
         padding: 0rem 0.4rem;
         font-size: 1rem;
         font-weight: bold;
@@ -1688,7 +1709,7 @@ input::input-placeholder {
       position: relative;
       top: -15px;
       font-size: 24px;
-      color: #e00000; }
+      color: #db0e38; }
     .widget-container header h4 {
       text-transform: uppercase;
       letter-spacing: 1.4;
@@ -1750,7 +1771,7 @@ input::input-placeholder {
 
 .item.item__help-desk {
   position: relative;
-  background: #e00000;
+  background: #db0e38;
   overflow: hidden; }
   .item.item__help-desk .smile {
     position: absolute;
@@ -1824,7 +1845,7 @@ input::input-placeholder {
   margin-bottom: 15px; }
   .item.item__find-profile span {
     text-transform: uppercase;
-    background: #e00000;
+    background: #db0e38;
     color: #ffffff;
     font-size: 10px;
     display: -webkit-box;
@@ -1852,7 +1873,7 @@ input::input-placeholder {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #e00000; }
+    color: #db0e38; }
   .item.item__find-profile ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #a2a3a3;
@@ -1987,7 +2008,7 @@ input::input-placeholder {
         opacity: 1;
         visibility: visible; }
       .card .cars .car .tag {
-        background: #e00000;
+        background: #db0e38;
         position: absolute;
         top: 10px;
         left: 10px;
@@ -2008,7 +2029,7 @@ input::input-placeholder {
             -ms-transform: scale(2);
             transform: scale(2); }
         .card .cars .car .thumbnail .circle {
-          background: #e00000;
+          background: #db0e38;
           position: absolute;
           width: 90px;
           height: 90px;
@@ -2035,7 +2056,7 @@ input::input-placeholder {
         margin-top: 75px; }
         .card .cars .car .content .title {
           margin: 0 0 12px;
-          color: #e00000;
+          color: #db0e38;
           font-size: 24px;
           -webkit-transition: 0.5s ease;
           -o-transition: 0.5s ease;
@@ -2091,7 +2112,7 @@ input::input-placeholder {
       font-weight: bold;
       font-size: 1.2rem; }
   .item.item__gallary .tag {
-    background: #e00000;
+    background: #db0e38;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -2120,7 +2141,7 @@ ul.tabs {
     overflow: hidden;
     position: relative; }
     ul.tabs li.active {
-      background-color: #e00000;
+      background-color: #db0e38;
       color: #ffffff;
       display: block; }
 
@@ -2129,7 +2150,7 @@ ul.tabs {
   clear: both;
   float: left;
   width: 100%;
-  background: #e00000;
+  background: #db0e38;
   overflow: auto;
   color: #ffffff;
   padding: 0.5rem 0 0 0; }
@@ -2149,6 +2170,8 @@ ul.tabs {
   .tab_content form fieldset {
     padding: 1rem;
     border: none; }
+    .tab_content form fieldset .form-group label {
+      cursor: pointer; }
     .tab_content form fieldset .form-group input[type="radio"] {
       position: absolute;
       opacity: 0; }
@@ -2170,14 +2193,14 @@ ul.tabs {
         -o-transition: all 250ms ease;
         transition: all 250ms ease; }
       .tab_content form fieldset .form-group input[type="radio"]:checked + .radio-label:before {
-        background-color: #e00000;
+        background-color: #db0e38;
         -webkit-box-shadow: inset 0 0 0 4px #ffffff;
         box-shadow: inset 0 0 0 4px #ffffff; }
       .tab_content form fieldset .form-group input[type="radio"]:focus + .radio-label:before {
         outline: none;
-        border-color: #e00000; }
+        border-color: #db0e38; }
   .tab_content form .actions {
-    border-top: 1px solid #ad0000;
+    border-top: 1px solid #ab0b2c;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2199,8 +2222,8 @@ ul.tabs {
       -o-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out; }
       .tab_content form .actions a.button:hover {
-        background: #ad0000;
-        border-right: #ad0000; }
+        background: #ab0b2c;
+        border-right: #ab0b2c; }
 
 .tab_drawer_heading {
   display: none; }
@@ -2222,7 +2245,7 @@ ul.tabs {
     -ms-user-select: none;
     user-select: none; }
   .d_active {
-    background-color: #e00000;
+    background-color: #db0e38;
     color: #ffffff; } }
 
 /*------------------------------------*\
