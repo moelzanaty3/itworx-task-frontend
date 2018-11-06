@@ -1,0 +1,37 @@
+@mixin after {
+  position: absolute;
+  color: lighten($color: $color-concrte, $amount: 40%);
+}
+.item.item__announcement.widget-container {
+  margin-top: 0px;
+  header {
+    &::after {
+      content: "▴";
+      font-size: 14px;
+      right: 30px;
+      top: 18px;
+      @include after();
+    }
+  }
+  .widget__content {
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "▸";
+      font-size: 10px;
+      top: 15px;
+      right: 15px;
+      @include after();
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+    p {
+      @media screen and (min-width: 678px) {
+        font-size: 15px;
+      }
+    }
+  }
+}

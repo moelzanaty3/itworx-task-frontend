@@ -1,0 +1,17 @@
+mixin widget()
+    .item__widget 
+        .widget__icon
+            //- i.far.fa-calendar
+            img(src="assets/images/icons/calender.png", alt="")
+        .widget__content 
+            p Lorem ipsum dolor, sit amet et vimest an vocent concptam.
+            strong <time datetime="2016-8-12 20:00"> 12 August 2016  
+.item.item__events.widget-container 
+    header 
+        //- i.far.fa-calendar
+        img(src="assets/images/icons/calender-title.png", alt="")
+        h4 upcoming events 
+    +widget
+    +widget
+    +widget
+

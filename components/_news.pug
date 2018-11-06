@@ -1,0 +1,25 @@
+mixin slide
+    .slide__wrapper
+        .row 
+            .col-xs-4
+                .slider__wrapper___img  
+                    strong Placeholder Image
+            .col-xs-8
+                .slider__wrapper___content
+                    h5: <img src="assets/images/icons/worlwide.svg"> News 
+                    h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    a.button.button-stroked.hvr-radial-out Read More
+.item.item__news
+    .carousel
+        .inner
+            .slide.active
+                +slide 
+            .slide
+                +slide 
+            .slide
+                +slide 
+            .slide 
+                +slide 
+            .slide 
+                +slide

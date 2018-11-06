@@ -1,0 +1,22 @@
+.item.item__polls-servy
+    ul.tabs
+        li.active(rel='tab1') Polls 
+        li(rel='tab2') Surveys
+    .tab_container
+        h3.d_active.tab_drawer_heading(rel='tab1') Polls
+        #tab1.tab_content
+            h5 How do you like the new internal portal 
+            form
+                fieldset
+                    .form-group
+                        input#radio-1(type='radio', name='radio1', value='I like it')
+                        label.radio-label(for='radio-1') I like it
+                    .form-group
+                        input#radio-2(type='radio', name='radio1', value='I don\'t like it ')
+                        label.radio-label(for='radio-2') I don't like it 
+                .actions 
+                    a.button submit
+                    a.button view results
+        h3.tab_drawer_heading(rel='tab2') Surveys
+        #tab2.tab_content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat nulla eaque natus impedit, itaque aspernatur iste, deleniti molestias adipisci rerum consectetur accusamus a. Nihil praesentium explicabo necessitatibus veritatis ut?          

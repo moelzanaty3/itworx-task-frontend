@@ -1,0 +1,28 @@
+mixin gridItem(quote)
+  .grid-item
+         span.border.border-right 
+         span.border.border-bottom
+         .shape
+         span=quote
+
+.item.item__self-service.clearfix
+   header 
+      span.icon
+      h4 Self Service
+   .services.grid-container
+      +gridItem('Contacts')
+      +gridItem('HR Forms')
+      +gridItem('HR Letter')
+      +gridItem('Leave REQuest ')
+      +gridItem('reporting')
+      +gridItem('meeting room')
+   a.button.button--primary View All 
+
+    
+
+
+
+      
+
+        
+   

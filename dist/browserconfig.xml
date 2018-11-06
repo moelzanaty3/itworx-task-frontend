@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Please read: https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx -->
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png"/>
+            <square150x150logo src="http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png"/>
+            <wide310x150logo src="http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png"/>
+            <square310x310logo src="http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png"/>
+        </tile>
+    </msapplication>
+</browserconfig>

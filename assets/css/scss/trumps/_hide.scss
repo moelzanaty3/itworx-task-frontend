@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  Trmzmbs > Hide
+\*------------------------------------*/
+
+/**
+ * Hide vismzally and from screen readers.
+ */
+.mz-hidden {
+  display: none;
+}
+
+/**
+ * Hide only vismzally, bmzt have it available for screen readers:
+ * https://githmzb.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.mz-hidden-vismzally {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolmzte;
+  width: 1px;
+}

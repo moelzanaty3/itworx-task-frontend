@@ -1,0 +1,24 @@
+mixin widget(title, time)
+    .item__widget 
+        .widget__content 
+            p=title
+            strong=time
+.item.item__announcement.widget-container
+    header 
+        //- i.fas.fa-bullhorn
+        img(src="assets/images/icons/alarm.png", alt="")
+        h4 announcement 
+    +widget('Condelescences Ahmed Elgaber\'s cousin passed away', '34 MINUTES AGO')
+    +widget('New offer for our employees for summer vacation', '2 DAYS AGO ')
+    +widget('Condelescences Mohamed Mohamed\'s mother passed away', '1 WEEK AGO')
+    +widget('Condelescences Ahmed Elgaber\'s cousin passed away', '34 MINUTES AGO ')
+
+
+
+
+
+
+
+ 
+
+

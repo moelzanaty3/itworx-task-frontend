@@ -1,0 +1,42 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title
+    meta(name='description', content='')
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    link(rel='manifest', href='site.webmanifest')
+    link(rel='icon', href='http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png', sizes='32x32')
+    link(rel='icon', href='http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png', sizes='192x192')
+    link(rel='apple-touch-icon-precomposed', href='http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png')
+    meta(name='msapplication-TileImage', content='http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png')
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.5.0/css/all.css", integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin="anonymous")
+    //- // Place favicon.ico in the root directory
+    link(rel='stylesheet', href='assets/css/site.css')
+
+  body
+    //- if lte IE 9
+      p.browserupgrade
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='https://browsehappy.com/') upgrade your browser
+        |  to improve your experience and security.
+
+    #preloader
+      #status  
+
+    include ./components/page.pug
+    
+    
+    script(src='assets/js/vendor/modernizr-3.6.0.min.js')
+    script(src='assets/js/vendor/jquery-3.3.1.min.js')
+    script.
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\\\/script>')
+    script(src='assets/js/imagesloaded.js')
+    script.
+      $('.page').imagesLoaded();
+    script(src='assets/js/plugins.js')
+    script(src='assets/js/main.js')
+
