@@ -2100,6 +2100,131 @@ input::input-placeholder {
     padding: 0.1rem 0.5rem;
     z-index: 1; }
 
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  width: 100%; }
+  ul.tabs li {
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    padding: 0px 21px;
+    height: 31px;
+    line-height: 31px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 20px 50px 32px 20px;
+    overflow: hidden;
+    position: relative; }
+    ul.tabs li.active {
+      background-color: #e00000;
+      color: #ffffff;
+      display: block; }
+
+.tab_container {
+  border-top: none;
+  clear: both;
+  float: left;
+  width: 100%;
+  background: #e00000;
+  overflow: auto;
+  color: #ffffff;
+  padding: 0.5rem 0 0 0; }
+
+.tab_content p {
+  padding: 1rem;
+  text-align: justify; }
+
+.tab_content h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
+  margin: 0; }
+
+.tab_content form {
+  margin: 0; }
+  .tab_content form fieldset {
+    padding: 1rem;
+    border: none; }
+    .tab_content form fieldset .form-group input[type="radio"] {
+      position: absolute;
+      opacity: 0; }
+      .tab_content form fieldset .form-group input[type="radio"] + .radio-label:before {
+        content: "";
+        background: #ffffff;
+        border-radius: 100%;
+        border: 1px solid #ffffff;
+        display: inline-block;
+        width: 1.4em;
+        height: 1.4em;
+        position: relative;
+        top: 3px;
+        margin-right: 1em;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transition: all 250ms ease;
+        -o-transition: all 250ms ease;
+        transition: all 250ms ease; }
+      .tab_content form fieldset .form-group input[type="radio"]:checked + .radio-label:before {
+        background-color: #e00000;
+        -webkit-box-shadow: inset 0 0 0 4px #ffffff;
+        box-shadow: inset 0 0 0 4px #ffffff; }
+      .tab_content form fieldset .form-group input[type="radio"]:focus + .radio-label:before {
+        outline: none;
+        border-color: #e00000; }
+  .tab_content form .actions {
+    border-top: 1px solid #ad0000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .tab_content form .actions a.button {
+      padding: 0.5rem;
+      color: #ffffff;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      font-weight: 700;
+      font-size: 0.8rem;
+      -webkit-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+      .tab_content form .actions a.button:hover {
+        background: #ad0000;
+        border-right: #ad0000; }
+
+.tab_drawer_heading {
+  display: none; }
+
+@media screen and (max-width: 480px) {
+  .tabs {
+    display: none; }
+  .tab_drawer_heading {
+    background-color: #797979;
+    color: #ffffff;
+    margin: 0;
+    padding: 5px 20px;
+    display: block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .d_active {
+    background-color: #e00000;
+    color: #ffffff; } }
+
 /*------------------------------------*\
   Trmzmbs > Hide
 \*------------------------------------*/
