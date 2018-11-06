@@ -24,23 +24,19 @@ html.no-js(lang='en')
         a(href='https://browsehappy.com/') upgrade your browser
         |  to improve your experience and security.
 
+    #preloader
+      #status  
 
     include ./components/page.pug
     
     
     script(src='assets/js/vendor/modernizr-3.6.0.min.js')
-    //- script(src='assets/js/imagesloaded.js')
-    //- script(src='assets/js/classie.js')
-    //- script(src='assets/js/AnimOnScroll.js')
-    //- script.
-      new AnimOnScroll(document.getElementById('grid'), {
-      minDuration: 0.4,
-      maxDuration: 0.7,
-      viewportFactor: 0.2
-      });
     script(src='assets/js/vendor/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
     script.
       window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\\\/script>')
+    script(src='assets/js/imagesloaded.js')
+    script.
+      $('.page').imagesLoaded();
     script(src='assets/js/plugins.js')
     script(src='assets/js/main.js')
 

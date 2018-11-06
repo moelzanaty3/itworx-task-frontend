@@ -1,3 +1,13 @@
+$(window).on("load", function() {
+  // makes sure the whole site is loaded
+  $("#status").fadeOut(); // will first fade out the loading animation
+  $("#preloader")
+    .delay(350)
+    .fadeOut("slow"); // will fade out the white DIV that covers the website.
+  $("body")
+    .delay(350)
+    .css({ overflow: "visible" });
+});
 /*
  * We trigger the factory() function is different
  * ways to support modular JavaScript libraries. 
@@ -173,13 +183,17 @@
       .on(
         "click",
         this.settings.arrowRight,
-        { direction: "right" },
+        {
+          direction: "right",
+        },
         this.changeSlide,
       )
       .on(
         "click",
         this.settings.arrowLeft,
-        { direction: "left" },
+        {
+          direction: "left",
+        },
         this.changeSlide,
       )
       .on("click", ".indicators li", this.changeSlide);
@@ -420,7 +434,9 @@ $(".carousel").MZNZN(args);
 $(document).ready(function() {
   var getcarHeight = $(".car.active").height();
 
-  $(".cars").css({ height: getcarHeight });
+  $(".cars").css({
+    height: getcarHeight,
+  });
 
   var carItem = $(".car"),
     carCurrentItem = carItem.filter(".active");
