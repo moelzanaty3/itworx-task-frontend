@@ -1,0 +1,10 @@
+{
+  "icons": [
+    {
+      "src": "http://itworxcom-eu-west-1.s3.amazonaws.com/wp-content/uploads/2016/07/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/"
+}
